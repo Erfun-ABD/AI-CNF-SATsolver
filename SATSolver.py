@@ -1,13 +1,14 @@
-import pysat
 from pysat.formula import CNF
 
+from functools import reduce
 import matplotlib.pyplot as plt
 import random, math
-from functools import reduce
+
 import Utilities as ut
 
-# two cnf files, one is satisfiable and the other is unsatisfiable
-formula = CNF(from_file="Input.cnf")
+
+formula = CNF(from_file="Inputs/Input.cnf")
+# formula = CNF(from_file="Inputs/UInput.cnf")
 
 
 fig1, axs1 = plt.subplots(2, 1)
